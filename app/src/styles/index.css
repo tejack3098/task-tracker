@@ -1,0 +1,87 @@
+/* Set default font and smooth rendering */
+:root {
+  font-family: Arial, sans-serif, system-ui, Inter, Avenir, Helvetica;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure html, body, and root take up full height */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Center the root element */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+/* Responsive design */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+  a:hover {
+    color: #747bff;
+  }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/* General typography */
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+/* Flex container to handle content overflow and scrolling */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Scrollbar styling */
+.flex-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.flex-container::-webkit-scrollbar-thumb {
+  background-color: #646cff;
+  border-radius: 8px;
+}
+
+.flex-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

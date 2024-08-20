@@ -1,0 +1,55 @@
+/* src/styles/Task.css */
+
+.task {
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: max-height 0.3s ease;
+  }
+  
+  .task.completed {
+    background-color: #e0e0e0; 
+  }
+  
+  .task.completed .task-title,
+  .task.completed .task-description {
+    text-decoration: line-through;
+  }
+  
+  .task-title {
+    font-weight: bold;
+  }
+  
+  .task-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 20px;
+    transition: max-height 0.3s ease, white-space 0.3s ease;
+    padding: 0 10px; 
+  }
+  
+  .task-description.expanded {
+    white-space: normal;
+    max-height: 200px; 
+  }
+  
+  .task-created-date {
+    padding: 10px;
+    font-style: italic;
+  }
+  
+  .task:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border: none;
+    box-shadow: none;
+  }
+  

@@ -1,0 +1,30 @@
+/* Style for the transparent AppBar */
+.transparent-header {
+  padding: 20px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Style for the header title */
+.header-title {
+  flex-grow: 1;
+  color: white !important;
+}
+
+/* Style for the button */
+.header-button {
+  width: 150px;
+  height: 40px;
+  color: white !important;
+  font-weight: 700 !important;
+  background-color:#fecc67 !important; 
+  padding: 8px 16px; 
+  font-size: 1em !important; 
+  border-radius: 4px; 
+  transition: background-color 0.3s
+}
+
+/* Hover effect for the button */
+.header-button:hover {
+  background-color: #986601 !important; 
+}
